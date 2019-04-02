@@ -1,0 +1,273 @@
+<html>
+   <head>
+      <style type="text/css">
+         .topnav {
+         overflow: hidden;
+         background-color: #333;
+         font-family:sans-serif;
+         }
+         .topnav a {
+         float: left;
+         font-size: 20px;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         .dropdown {
+         float: left;
+         overflow: hidden;
+         }
+         .dropdown .dropbtn {
+         font-size: 20px;    
+         border: none;
+         outline: none;
+         color: white;
+         padding: 14px 16px;
+         background-color: inherit;
+         font-family: inherit;
+         margin: 0;
+         }
+         .topnav a:hover, .dropdown:hover .dropbtn {
+         background-color:gray;
+         color: black
+         }
+         .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+         }
+         .dropdown-content a {
+         float: none;
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+         }
+         .dropdown-content a:hover {
+         background-color: #ddd;
+         }
+         .dropdown:hover .dropdown-content {
+         display: block;
+         }
+         .active {
+         background-color:midnightblue
+         }
+         h1 {
+         text-align: center
+         }
+         @media screen and (min-width: 300px) {
+         .topnav {
+         width: 100%;
+         }
+         }
+         * {box-sizing: border-box;}
+         body {
+         font-family:sans-serif;
+         background-color: slategrey;
+         }
+         .mySlides {
+         display: none;
+         }
+         img {
+         vertical-align: middle;
+         width: 100%;
+         max-height: 500px
+         }
+         .slideshow-container {
+         max-width: 1000px;
+         position: relative;
+         margin: auto;
+         }
+         .numbertext {
+         color:black;
+         font-size: 12px;
+         padding: 8px 12px;
+         position: absolute;
+         top: 0;
+         font-weight: bolder
+         }
+         .dot {
+         height: 15px;
+         width: 15px;
+         margin: 0 2px;
+         background-color: #bbb;
+         border-radius: 50%;
+         display: inline-block;
+         transition: background-color 0.6s ease;
+         }
+         .active {
+         background-color: #717171;
+         }
+         .fade {
+         -webkit-animation-name: fade;
+         -webkit-animation-duration: 1.5s;
+         animation-name: fade;
+         animation-duration: 1.5s;
+         }
+         @-webkit-keyframes fade {
+         from {opacity: .4} 
+         to {opacity: 1}
+         }
+         @keyframes fade {
+         from {
+         opacity: .4
+         } 
+         to {
+         opacity: 1
+         }
+         }
+         blockquote {
+         max-width: 100%;
+         text-align: center;
+         }
+         @media screen and (max-width: 300px){
+         blockquote {
+         text-align: center;
+         max-width: 100%
+         } 
+         .slideshow-container {
+         width:auto;
+         }
+         .schedule1 {
+         margin-left: 450px;
+         }
+         }
+         .logout {
+         float: right;
+         }
+         .footer {
+         text-align: center;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="topnav">
+         <h1>Shang Hai Restaurant</h1>
+         <a href=Home.html>Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Our Foods 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a href="Starter.html">Starters,Salads,Soups</a>
+               <a href="Pizza.html">Pizza, Burgers, Sandwiches, Favorites</a>
+               <a href="Breakfast.html">Breakfast,Desserts,Beverages</a>
+            </div>
+         </div>
+         <a href=about_us.html>About Us</a>
+         <a href="contact_us.html">Contact Us</a>
+         <form action="Logout.inc.php" method="POST">
+            <button type="submit" name="logout" class="logout">Logout</button>
+         </form>
+      </div>
+      <div class="slideshow-container">
+         <div class="mySlides fade">
+            <div class="numbertext">1 / 10</div>
+            <img src="images/image11.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">2 / 10</div>
+            <img src="images/image1.jpeg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">3 / 10</div>
+            <img src="images/image5.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">4 / 10</div>
+            <img src="images/image18.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">5 / 10</div>
+            <img src="images/image16.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">6 / 10</div>
+            <img src="images/image17.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">7 / 10</div>
+            <img src="images/image15.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">8 / 10</div>
+            <img src="images/image22.jpg">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">9 / 10</div>
+            <img src="images/image9.png">
+         </div>
+         <div class="mySlides fade">
+            <div class="numbertext">10 / 10</div>
+            <img src="images/image8.jpg">
+         </div>
+      </div>
+      <div style="text-align:center">
+         <span class="dot"></span> 
+         <span class="dot"></span> 
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+         <span class="dot"></span>
+      </div>
+      <script>
+         var slideIndex = 0;
+         showSlides();
+         
+         function showSlides() {
+             var i;
+             var slides = document.getElementsByClassName("mySlides");
+             var dots = document.getElementsByClassName("dot");
+             for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+             }
+             slideIndex++;
+             if (slideIndex > slides.length) {slideIndex = 1}    
+             for (i = 0; i < dots.length; i++) {
+                 dots[i].className = dots[i].className.replace(" active", "");
+             }
+             slides[slideIndex-1].style.display = "block";  
+             dots[slideIndex-1].className += " active";
+             setTimeout(showSlides, 2000); // Change image every 2 seconds
+         }
+      </script>
+      <div>
+         <blockquote>
+            Shang Hai restaurant is a great restaurant in sri lanka which is located in kurunegala in front of Kururnegala Lake.Sri lankan spicy foods italian foods all are in one place.We all welcome you to the Shang Hai Restaurant.
+         </blockquote>
+      </div>
+      <div class="schedule">
+         <h1>Business Hours</h1>
+         <div class="schedule1">
+            <blockquote>
+               <pre>
+                                        Sunday:     9am – 9pm <br>
+                                        Monday:    11am – 9pm <br>
+                                        Tuesday:   11am – 9pm <br>
+                                        Thursday:  11am – 9pm <br>
+                                        Wednesday: 11am – 10pm <br>
+                                        Friday:    11am – 10pm<br>
+                                        Saturday:  11am – 10pm<br>
+                        We also serve Breakfast on Sundays from 9am till 1pm. 
+                                                
+                                                </pre>
+            </blockquote>
+         </div>
+      </div>
+      <div class="footer">
+         <hr>
+         <p>Published by Shang Hai restaurant <br>
+            Copyright &copy 2018 All Rights Reserved
+         </p>
+      </div>
+   </body>
+</html>

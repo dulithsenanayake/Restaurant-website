@@ -1,0 +1,57 @@
+a {
+            text-decoration: none;
+            color: white;
+            
+            
+        }
+ul {
+    display: block;
+    width: 100%;
+    vertical-align: middle;
+}
+       
+        
+        li {
+            list-style-type: none;
+            float: left;
+            font-size: 20px;
+            display:block;
+            padding: 20px;
+            margin:20px 0px;
+            background-color: steelblue;
+            
+            
+            text-align: center;
+            
+        }
+        .topnav {
+            width:100%;
+           
+            height: 15%;
+            margin: 0px;
+            padding: 0px;
+            
+        }
+        .topnav a:hover {
+            background-color:gray;
+            color: black
+        }
+        .active {
+            background-color:midnightblue
+        }
+        h1 {
+            text-align: center
+        }
+        @media screen and (min-width: 300px) {
+            .topnav {
+                //display: block;
+                width: 100%;
+                
+                
+            }
+            li {
+                float: left;
+                
+            }
+        }
+   

@@ -1,0 +1,155 @@
+<html>
+   <head>
+      <link rel="stylesheet" type="text/css" href="main.css">
+      <style type="text/css">
+         body {
+         background-color: slategrey
+         }
+         .topnav {
+         overflow: hidden;
+         font-family:sans-serif;
+         background-color: #333;
+         }
+         .topnav a {
+         float: left;
+         font-size:20px;
+         color: white;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         }
+         .dropdown {
+         float: left;
+         overflow: hidden;
+         }
+         .dropdown .dropbtn {
+         font-size: 20px;    
+         border: none;
+         outline: none;
+         color: white;
+         padding: 14px 16px;
+         background-color: inherit;
+         font-family: inherit;
+         margin: 0;
+         }
+         .topnav a:hover, .dropdown:hover .dropbtn {
+         background-color:gray;
+         color: black
+         }
+         .dropdown-content {
+         display: none;
+         position: absolute;
+         background-color: #f9f9f9;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+         z-index: 1;
+         }
+         .dropdown-content a {
+         float: none;
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+         text-align: left;
+         }
+         .dropdown-content a:hover {
+         background-color: #ddd;
+         }
+         .dropdown:hover .dropdown-content {
+         display: block;
+         }
+         .active {
+         background-color:midnightblue
+         }
+         h1 {
+         text-align: center
+         }
+         @media screen and (min-width: 300px) {
+         .topnav {
+         width: 100%;
+         }
+         }
+         h2 {
+         text-align: center
+         }
+         .imgcontainer {
+         width: 100%
+         }
+         img {
+         width: 100%;
+         height: 50%
+         }
+         .contact {
+         text-align:center;
+         margin-top: 200px;
+         font-size: 25px;
+         }
+         .left {
+         float:left;
+         width: 50%;
+         }
+         .right {
+         float:right;
+         width: 40%;
+         text-align: left;
+         }
+         .footer {
+         clear: both;
+         text-align: center;
+         width: 100%;
+         } 
+      </style>
+   </head>
+   <body>
+      <div class="topnav">
+         <h1>Shang Hai Restaurant</h1>
+         <a href=Home.html>Home</a>
+         <div class="dropdown">
+            <button class="dropbtn">Our Foods 
+            <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+               <a href="Starter.html">Starters,Salads,Soups</a>
+               <a href="Pizza.html">Pizza, Burgers, Sandwiches, Favorites</a>
+               <a href="Breakfast.html">Breakfast,Desserts,Beverages</a>
+            </div>
+         </div>
+         <a href=about_us.html>About Us</a>
+         <a href="contact_us.html">Contact Us</a>
+      </div>
+      <div class="contact">
+         <h1>Contact US</h1>
+         <div class="left">
+            <h3>Dulith Restaurant</h3>
+            <address><b>No 255 <br>
+               North Lake Road <br>
+               Kurunegala<br>
+               Srilanka<br><br></b>
+            </address>
+            <p><b>Tel : +94 337 6161 <br><br>
+               Fax : +941 337 4565 <br><br>
+               Email :dulithrestaurant@gmail.com </b>
+            </p>
+         </div>
+         <div class="right">
+            First Name* <br>
+            <input type="text" size="30" required> <br>
+            Last Name* <br>
+            <input type="text" size="30" required> <br>
+            Email* <br>
+            <input type="text" size="30" required> <br>
+            Phone <br>
+            <input type="text" size="30"> <br>
+            Question or Comment?* <br>
+            <textarea rows="10" cols="40" required></textarea><br>
+            <input type="submit" value="Submit">
+         </div>
+      </div>
+      <div class="footer">
+         <hr>
+         <p>Published by Shang Hai restaurant <br>
+            Copyright &copy 2018 All Rights Reserved
+         </p>
+      </div>
+   </body>
+</html>
